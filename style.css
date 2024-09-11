@@ -1,0 +1,171 @@
+  @import url("//fonts.googleapis.com/css?family=Google+Sans:400,500,600,700");
+  @import url("//fonts.googleapis.com/css?family=Roboto+Mono:400,500");
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    user-select: none;
+  }
+
+  body {
+    font-family: "Google Sans", Helvetica, Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    background-color: #14151f;
+  }
+
+
+  *::-webkit-scrollbar {
+    width: 2px;
+    height: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background-color: #4b4b4b;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #363659;
+    border-radius: 5px;
+  }
+
+  #inputHTML {
+    outline: none;
+    border: none;
+    background-color: #0e0e0e;
+    padding: 10px;
+    color: white;
+    font-family: monospace !important;
+    border-radius: 0 0 5px 5px;
+    resize: none;
+    font-size: 14px;
+  }
+
+  header {
+    color: #dbdad9;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header button {
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    background-color: #4f4cf4;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+  }
+
+  header button:hover {
+    background-color: #3936f4;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 5px;
+    width: 100%;
+    height: 80vh;
+    padding: 10px;
+  }
+
+  .wr {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .paste-box {
+    width: 100%;
+    height: 50px;
+    background-color: #343541;
+    border-radius: 5px 5px 0 0;
+    color: white;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+  }
+
+  main .inputs #inputHTML {
+    width: 100%;
+    height: 91%;
+    max-height: 487px;
+    overflow: auto;
+  }
+
+  main .outputs #codeContainer {
+    width: 100%;
+
+    margin: 0;
+    height: 80vh;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .outputs .copy-box {
+    height: 50px;
+    width: 100%;
+    background-color: #343541;
+    border-radius: 5px 5px 0 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  #cpy,
+  #clr {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    gap: 5px;
+    cursor: pointer;
+    padding: 9px;
+    border-radius: 25px;
+  }
+
+  #cpy:hover,
+  #clr:hover {
+    background-color: #3c3d4a;
+  }
+
+  #js {
+    font-family: monospace;
+  }
+
+  #clr i {
+    font-size: 17px;
+  }
+
+  #cpy i {
+    font-size: 17px;
+  }
+
+  @media (width <600px) {
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+
+    main .inputs #inputHTML {
+      height: 20vh;
+    }
+
+    main .outputs #codeContainer {
+      height: 48vh;
+    }
+  }

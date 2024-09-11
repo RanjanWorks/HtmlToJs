@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="prism.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Html to js made by ranjan</title>
+</head>
+
+<body>
+  <header>
+    <div class="wr">
+      <h2>Html To Js</h2>
+    </div>
+    <div class="wr">
+      <button onclick="startProcess()">Generate</button>
+      <div id="root"></div>
+
+    </div>
+  </header>
+  <main>
+    <div class="inputs">
+      <div class="paste-box">
+        <div class="wrap">
+          <p id="js">HTML</p>
+        </div>
+        <div id="clr" class="wrap">
+          <i data-clr class="material-icons">cancel</i>
+          <P id="clrText">Clear</P>
+        </div>
+      </div>
+
+      <div class="editable-div" contenteditable id="inputHTML">
+
+      </div>
+    </div>
+    <div class="outputs">
+      <div class="copy-box">
+        <div class="wrap">
+          <p id="js">Js</p>
+        </div>
+        <div id="cpy" class="wrap">
+          <i data-cpy class="material-icons">content_copy</i>
+          <p id="cpyText">Copy code</p>
+        </div>
+      </div>
+      <pre id="codeContainer" class="code-container"><code id="codeSnippet" class="language-javascript"></code></pre>
+    </div>
+  </main>
+  <script src="https://cdn.ranjankashyap1.repl.co/profile.js"></script>
+  <script>
+
+    new profile("#root");
+  </script>
+  <script src="prism.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
